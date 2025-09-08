@@ -1,0 +1,28 @@
+{
+  "name": "slow-load-demo",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+  },
+  "scripts": {
+    "test:all": "npx playwright test tests/performance.spec.js",
+    "test:report": "npx playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "lighthouse": "^11.0.0"
+  },
+  "type": "module",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
